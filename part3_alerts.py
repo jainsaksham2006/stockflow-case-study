@@ -63,6 +63,7 @@ def low_stock_alerts(company_id):
 
     alerts = []
     for row in rows:
+        # Avoid division by zero for days_until_stockout
         if row.avg_daily_sales and row.avg_daily_sales > 0:
             days_until_stockout = round(row.current_stock / row.avg_daily_sales)
         else:
