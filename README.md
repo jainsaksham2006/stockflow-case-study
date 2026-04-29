@@ -63,6 +63,7 @@ Backend case study solution for the StockFlow inventory management platform.
 ## Part 3: Low-Stock Alerts API
 
 ### Endpoint
+`GET /api/companies/{company_id}/alerts/low-stock`
 
 ### Assumptions Made
 - "Recent sales activity" = at least one sale transaction in the last 30 days
