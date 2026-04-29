@@ -67,3 +67,4 @@ def create_product():
 
     # Return 201 Created
     return jsonify({"message": "Product created", "product_id": product.id}), 201
+
