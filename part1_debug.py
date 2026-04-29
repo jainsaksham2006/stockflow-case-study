@@ -17,6 +17,7 @@ def create_product():
     if missing:
         return jsonify({"error": f"Missing required fields: {missing}"}), 400
 
+    # Validate price is a positive decimal
     try:
         price = Decimal(str(data['price']))
         if price < 0:
